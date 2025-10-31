@@ -30,14 +30,14 @@ main {
     border-radius: 10px;
 }
 .gray {
-    color: #9a9a9a;
+    color: #d4d4d4;
     margin: 0px;
     padding: 0px;
     display: inline-block;
     line-height: 1;
 }
 .done {
-    color: #ffffff;
+    color: #09ff00;
     margin: 0px;
     padding: 0px;
     display: inline-block;
@@ -71,4 +71,40 @@ main {
 }
 .time > h1 {
     font-size: 20px;
+}
+.lined {
+    display: none;
+}
+.timed {
+    display: none;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.result > p {
+    font-size: 50px;
+}
+h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.res {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.res > p {
+    font-size: 30px;
+}
+
+.resulted {
+    display: none;
+}
+#wtf {
+    text-align: center;
+    width: 60%;
 }
