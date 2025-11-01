@@ -51,7 +51,7 @@ window.addEventListener("keydown", (e) => {
         deadline = 60 / deadline;
         deadline = numpara * deadline;
         document.getElementById("wpm").textContent = deadline.toFixed(2) + " words in one minute";
-        pourcentage = numletter / 149 * 100;
+        pourcentage = numletter / 181 * 100;
         document.getElementById("accur").textContent = pourcentage.toFixed(2) + " %";
         if (pourcentage < 80 || deadline < 5) {
             document.getElementById("wtf").textContent = "You are beginner. You need to develop";
@@ -85,8 +85,13 @@ window.addEventListener("keydown", (e) => {
         numletter++;
         numtotal++;
     } else {
-        spanstyle.className = "error";
-        numtotal++;
+        if (spanstyle.textContent == " ") {
+            spanstyle.textContent = "e";
+            numtotal++;
+        } else {
+            spanstyle.className = "error";
+            numtotal++;
+        }
     }
 
     numlett++;

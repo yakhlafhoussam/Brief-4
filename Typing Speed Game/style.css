@@ -46,6 +46,16 @@ main {
 }
 .error {
     color: #ff0000;
+    background-color: #ffa5a5;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    line-height: 1;
+    font-weight: bold;
+}
+.grayes {
+    color: #ffa5a5;
+    background-color: #ffa5a5;
     margin: 0px;
     padding: 0px;
     display: inline-block;
